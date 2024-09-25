@@ -3,7 +3,7 @@ import './AuthLayout.css'
 function AuthLayout() {
   return (
     <div className='layout-container'>
-      dfdfd
+      
     </div>
   )
 }

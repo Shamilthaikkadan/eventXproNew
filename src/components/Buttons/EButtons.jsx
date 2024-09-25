@@ -1,9 +1,10 @@
 import React from 'react'
-
-export default function EButtons() {
+import './EButton.css'
+export default function EButtons({ name,icon }) {
   return (
-    <div>
-      
-    </div>
+    <button>
+      {name}
+      {icon && <img src={icon} alt="" />}
+    </button>
   )
 }
