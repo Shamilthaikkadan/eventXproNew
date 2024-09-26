@@ -3,6 +3,7 @@ import './Login.css';
 import openEye from '../../assets/svg/icons/OpenEye.svg'
 import EButtons from '../../components/Buttons/EButtons';
 import ArrowRight from '../../assets/svg/icons/ArrowRight.svg'
+import { Link } from 'react-router-dom';
 function Login() {
   return (
     <div className='login-container'>
@@ -33,12 +34,16 @@ function Login() {
             </div>
             <a href="" className='forgot-pass-text'>Forgot password?</a>
           </div>
-          <EButtons name='Login' icon={ArrowRight} />
+          <Link to='/auth/otp'>
+            <EButtons name='Login' icon={ArrowRight} />
+          </Link>
         </div>
       </div>
       <div className='sign-up'>
         <span>Don't have an account ?</span>
-        <a href="">Signup now</a>
+        <Link to='/auth/signup'>
+          Signup now
+        </Link>
       </div>
     </div>
   )

@@ -1,0 +1,125 @@
+.nav-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-component {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.logo-container {
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.logo-container img {
+    width: 150px;
+    height: 50px;
+}
+
+.nav-options {
+    padding: 10px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--aliceBlue);
+}
+
+.settings-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.owner-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.user-outlet{
+    width: 100%;
+    height: calc(100vh - 85px);
+    background-color: var(--pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 425px) {
+    .nav-options {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-options.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block; 
+        padding: 10px;
+    }
+    .user-outlet{
+        width: 100%;
+        height: calc(100vh - 85px);
+        background-color: var(--pale);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 320px) {
+    .nav-options {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-options.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block; 
+        padding: 10px;
+    }
+    .user-outlet{
+        width: 100%;
+        height:100vh;
+        background-color: var(--pale);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

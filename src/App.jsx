@@ -1,19 +1,14 @@
-import { useState } from 'react';
 import './App.css';
-import AuthLayout from './Layout/Auth Layout/AuthLayout';
-import Login from './Pages/login/Login';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
-import LogCard from './components/Log Card/LogCard';
+import Authlayout from './Layout/Auth Layout/AuthLayout';
+import UserLayout from './Layout/User Layout/UserLayout';
+import MainRoute from './Routes';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LogCard />}>
-            <Route path="login" element={<Login />} />
-          </Route>
-        </Routes>
+        <MainRoute />
       </BrowserRouter>
     </>
   );

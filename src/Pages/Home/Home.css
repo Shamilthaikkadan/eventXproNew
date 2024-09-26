@@ -1,0 +1,96 @@
+@import '../../components/css/variables.css';
+
+.create-container{
+  padding: 5px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.create-event-img{
+    width: 400px;
+    height: 400px;
+}
+.create-container h1{
+    color: var(--black);
+    font-weight: 200;
+    font-size: 40px;
+    /* line-height: 24px; */
+    font-family: "DM Sans", system-ui;
+    user-select: none;
+
+}
+.create-container article{
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "DM Sans", system-ui;
+    user-select: none;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .create-container {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .create-event-img{
+        width: 400px;
+        height: 350px;
+    }
+    .create-container article{
+        color: var(--gray);
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "DM Sans", system-ui;
+        user-select: none;
+    
+    }
+}
+@media screen and (max-width: 425px) {
+    .create-container {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .create-event-img{
+        width: 400px;
+        height: 250px;
+    }
+    .create-container article{
+        display: none;
+        color: var(--gray);
+        font-weight: 300;
+        font-size: .8rem;
+        line-height: 24px;
+        font-family: "DM Sans", system-ui;
+        user-select: none;
+    }
+}
+@media screen and (max-width: 320px) {
+    .create-container {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .create-event-img{
+        width: 400px;
+        height: 250px;
+    }
+    .create-container article{
+        display: none;
+        color: var(--gray);
+        font-weight: 300;
+        font-size: .8rem;
+        line-height: 24px;
+        font-family: "DM Sans", system-ui;
+        user-select: none;
+    }
+}

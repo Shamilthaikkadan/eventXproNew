@@ -1,9 +1,10 @@
 @import '../css/variables.css';
-.container{
+
+.container {
     display: flex;
 }
+
 .log-card {
-    /* flex: 1; */
     width: 20%;
     background: linear-gradient(to top, #3A2EC3, #5E2EC3);
     display: flex;
@@ -87,10 +88,10 @@
 
 .quote-pagination {
     width: 90%;
-    height:220px;
+    height: 220px;
     display: flex;
     align-items: flex-start;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     background-color: transparent;
     position: absolute;
@@ -176,38 +177,105 @@
 .indicator.active {
     background-color: white;
 }
-.outlet-container{
+
+.outlet-container {
     width: 80%;
 }
 
 
 /* mediaquery */
 
-@media screen and (max-width: 768px) { 
+
+@media screen and (max-width: 1440px) {
+    .log-card {
+        width: 40%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .quote-pagination {
+        width: 80%;
+        height: 220px;
+    }
+
+    .quote {
+        width: 90%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .quote img {
+        width: 80px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .log-card {
+        width: 50%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .quote-pagination {
+        width: 80%;
+        height: 220px;
+    }
+
+    .quote {
+        width: 90%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .quote img {
+        width: 80px;
+    }
+  .outlet-container{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
         display: flex;
     }
 
     .log-card {
-        width: 100%; 
+        width: 100%;
         min-height: 100px;
         display: flex;
         align-items: center;
         padding: 0;
     }
-    .logo{
+
+    .logo {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .header{
+
+    .header {
         display: none;
     }
-    .quote-container{
+
+    .quote-container {
         display: none;
     }
-    .indicator-container{
+
+    .indicator-container {
         display: none;
     }
 }
