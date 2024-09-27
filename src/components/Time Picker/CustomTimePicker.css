@@ -1,0 +1,57 @@
+@import '../css/variables.css';
+
+.time-picker {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  gap:15px;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--loginBorder);
+  border-bottom-style: solid;
+  /* background-color: aqua; */
+}
+
+.time-picker span {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  font-family: "DM Sans", system-ui;
+  user-select: none;
+}
+
+.time-picker input {
+  margin-bottom: 8px;
+  border: none;
+  outline: none;
+  width: 90%;
+  color: var(--placeholderDark);
+  font-family: "DM Sans", system-ui;
+}
+
+.time-picker select {
+  margin-bottom: 10px;
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  color: var(--placeholderDark);
+  font-family: "DM Sans", system-ui;
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  position: relative;
+  padding-right: 25px;
+}
+
+.time-picker select::-ms-expand {
+  display: none; 
+}
+
+
+.time-picker img{
+  width: 15px;
+  height: 15px;
+}

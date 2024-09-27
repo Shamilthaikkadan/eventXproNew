@@ -7,54 +7,56 @@ import user from '../../assets/svg/icons/User.svg'
 import management from '../../assets/svg/icons/Management.svg'
 import Otp from '../../assets/svg/icons/Otp.svg'
 import configure from '../../assets/svg/icons/Configure.svg'
-import Lock from '../../assets/svg/icons/Lock.svg'
 import security from '../../assets/svg/icons/Security.svg'
+import AccountSecurity from '../../assets/svg/icons/AccountSecurity.svg'
 
 export default function Settings() {
-   const data = [ 
+  const data = [
     {
-        id:1,
-        name:'User Management',
-        image:user
+      id: 1,
+      name: 'User Management',
+      image: user
     },
     {
-        id:2,
-        name:'Role Management',
-        image:management
+      id: 2,
+      name: 'Role Management',
+      image: management
     },
     {
-        id:3,
-        name:'Disable OTP Authentication',
-        image:Otp
+      id: 3,
+      name: 'Disable OTP Authentication',
+      image: Otp
     },
     {
-        id:4,
-        name:'Configuration',
-        image:configure
+      id: 4,
+      name: 'Configuration',
+      image: configure
     },
     {
-        id:5,
-        name:'Change Password',
-        image:Lock
+      id: 5,
+      name: 'Change Password',
+      image: security
     },
     {
-        id:6,
-        name:'Account Security',
-        image:security
+      id: 6,
+      name: 'Account Security',
+      image: AccountSecurity
     },
 
-]
+  ]
   return (
     <div className='settings-container'>
       <div className="brand-container">
         <img src={logo} alt="" />
       </div>
 
+      <div className="edit-main-container">
 
-      {/* <div className="edit-container">
-        <img src={edit} alt="" />
+        <div className="edit-container">
+          <img src={edit} alt="" />
 
-      </div> */}
+        </div>
+      </div>
 
       <div className="page-container">
         {

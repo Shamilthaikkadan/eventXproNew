@@ -1,0 +1,39 @@
+@import '../../components/css/variables.css';
+
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--platinum);
+    padding: 4px;
+    padding-left: 5px;
+    padding-right: 10px;
+    gap: 5px;
+    border-radius: 20px;
+}
+.parent span{
+    font-size: 12px;
+    color: var(--gray);
+    font-family: "DM Sans", system-ui;
+    user-select: none;
+}
+
+
+.child {
+    width: 18px;
+    height: 18px;
+    background-color: var(--platinum);
+    border: 2px solid rgba(128, 128, 128, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.grand-child{
+    width: 11px;
+    height:11px;
+    background-color: var(--gray);
+    border-radius: 50%;
+}

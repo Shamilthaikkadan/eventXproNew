@@ -1,0 +1,199 @@
+@import '../../components/css/variables.css';
+
+@keyframes slideIn {
+    from {
+        transform: translate(-100%, -100%); 
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translate(0, 0); 
+        opacity: 1;
+    }
+    to {
+        transform: translate(-100%, -100%); 
+        opacity: 0; 
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation: fadeIn 0.3s forwards; 
+}
+
+.modal-overlay.hide {
+    animation: fadeOut 0.3s forwards; 
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-direction: column;
+    animation: slideIn 0.3s forwards;
+}
+
+.modal-overlay.hide .modal-content {
+    animation: slideOut 0.3s forwards; 
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.calender {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calender img {
+    width: 25px;
+    height: 25px;
+}
+
+.calender span {
+    color: var(--black);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 24px;
+    font-family: "DM Sans", system-ui;
+    user-select: none;
+}
+
+.close-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-container img {
+    width: 28px;
+    height: 28px;
+}
+.event-container{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+.event-name{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--loginBorder);
+    border-bottom-style: solid;
+}
+.event-lang{
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--loginBorder);
+    border-bottom-style: solid;
+}
+.event-name span{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    font-family: "DM Sans", system-ui;
+    user-select: none;
+}
+.event-lang span{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    font-family: "DM Sans", system-ui;
+    user-select: none;
+}
+.event-name input{
+    margin-bottom: 8px;
+    border: none;
+    outline: none;
+    width: 90%;
+    color: var(--placeholderDark);
+    font-family: "DM Sans", system-ui;
+}
+
+.event-lang select{
+    margin-bottom: 8px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--white);
+    color: var(--placeholderDark);
+    font-family: "DM Sans", system-ui;
+}
+.event-type{
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    width: 95%;
+    flex-direction: column;
+    gap: 15px;
+}
+.event-type span{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    font-family: "DM Sans", system-ui;
+    user-select: none;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.date-picker{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.action-buttons{
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}

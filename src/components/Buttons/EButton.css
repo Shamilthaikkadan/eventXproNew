@@ -11,9 +11,48 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    transition: background-color 0.3s ease;
 }
 
-button img {
+
+button img,
+.e-button-icon {
+    width: 15px;
+    height: 15px;
+}
+
+
+.e-button {
+    padding: 10px;
+    height: 50px;
+    background: linear-gradient(to right, #5E2EC3, #3A2EC3);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.is-accent {
+    background: linear-gradient(to right, #5E2EC3, #3A2EC3);
+}
+
+.is-default {
+    background: linear-gradient(to right, #AE2EC3, #C41F1B);
+}
+
+.e-button-text {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 20px;
+    /* line-height: 24px; */
+    font-family: "DM Sans", system-ui;
+    user-select: none;
+}
+
+.e-button-icon {
     width: 15px;
     height: 15px;
 }
