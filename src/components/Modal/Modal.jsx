@@ -6,6 +6,7 @@ import TypeButtons from '../Type Buttons/TypeButtons';
 import CustomDatePicker from '../Date Picker/CustomDatePicker';
 import CustomTimePicker from '../Time Picker/CustomTimePicker';
 import EButtons from '../Buttons/EButtons';
+import { Link } from 'react-router-dom';
 
 export default function Modal({ isOpen, onClose }) {
     if (!isOpen) return null;
@@ -54,7 +55,9 @@ export default function Modal({ isOpen, onClose }) {
                     <CustomTimePicker name='End Time' />
                 </div>
                 <div className='action-buttons'>
+                    <Link to='/event'>
                     <EButtons isAccent name='Create' />
+                    </Link>
                     <EButtons isDefault name='Cancel' onClick={onClose} />
                 </div>
             </div>

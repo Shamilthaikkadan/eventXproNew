@@ -60,7 +60,7 @@
 }
 .user-outlet{
     width: 100%;
-    height: calc(100vh - 85px);
+    height: 100%;
     background-color: var(--pale);
     display: flex;
     align-items: center;

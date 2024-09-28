@@ -2,6 +2,7 @@
 
 .create-container{
   padding: 5px;
+  height: calc(100vh - 95px);
   /* background-color: aqua; */
   display: flex;
   align-items: center;

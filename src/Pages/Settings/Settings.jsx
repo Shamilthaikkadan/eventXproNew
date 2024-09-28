@@ -45,6 +45,7 @@ export default function Settings() {
 
   ]
   return (
+    <div style={{height:'calc(100vh - 90px)',display:"flex",alignItems:"center",justifyContent:"center"}}>
     <div className='settings-container'>
       <div className="brand-container">
         <img src={logo} alt="" />
@@ -71,6 +72,7 @@ export default function Settings() {
           ))
         }
       </div>
+    </div>
     </div>
   )
 }

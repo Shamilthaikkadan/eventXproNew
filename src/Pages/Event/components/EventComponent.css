@@ -1,0 +1,95 @@
+@import '../../../components/css/variables.css';
+
+.event-tab-container {
+  padding: 20px;
+  padding-left: 35px;
+  /* background-color: var(--white); */
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+}
+
+.event-tab-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 60%;
+}
+
+.event-status-group {
+  padding: 5px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.event-status-group span {
+  font-size: 12px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease-in-out;
+  font-family: "DM Sans", system-ui;
+
+}
+
+
+.event-status-group .active-status {
+  background-color: var(--blue); 
+  color: var(--white); 
+}
+
+.event-status-group span.live {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.event-tab-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 40%;
+}
+
+.icon-button {
+  padding: 8px;
+  background:#F2E9FF;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.list-button {
+    padding: 3px;
+    background:white;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+
+.icon-button img {
+  width: 15px; 
+}
+
+.icon-button:hover {
+  background-color: var(--hoverColor);
+}
+@media screen and (min-width: 1440px) {
+    .event-tab-container {
+        /* width: 100%; */
+        /* min-height: 100%; */
+        display: flex;
+        align-items: center;
+        /* background-color: aqua; */
+    }
+   
+}

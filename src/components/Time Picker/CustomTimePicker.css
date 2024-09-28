@@ -6,11 +6,8 @@
   align-items: flex-start;
   justify-content: space-around;
   flex-direction: column;
-  gap:15px;
-  border-bottom-width: 1px;
-  border-bottom-color: var(--loginBorder);
-  border-bottom-style: solid;
-  /* background-color: aqua; */
+  gap: 15px;
+  border-bottom: 1px solid var(--loginBorder);
 }
 
 .time-picker span {
@@ -22,36 +19,62 @@
   user-select: none;
 }
 
-.time-picker input {
-  margin-bottom: 8px;
-  border: none;
-  outline: none;
-  width: 90%;
-  color: var(--placeholderDark);
-  font-family: "DM Sans", system-ui;
+.time-picker-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.time-picker select {
-  margin-bottom: 10px;
-  width: 90%;
+.hour-input,
+.minute-input {
+  font-size: .8rem;
+  font-family: "DM Sans", system-ui;
+  text-align: center;
   border: none;
-  outline: none;
+  border-radius: 5px;
   background-color: var(--white);
   color: var(--placeholderDark);
+}
+
+.separator {
+  font-size: .8rem;
+  color: var(--black);
+}
+
+.period-select {
+  font-size: .8rem;
   font-family: "DM Sans", system-ui;
-  appearance: none; 
-  -webkit-appearance: none;
-  -moz-appearance: none; 
-  position: relative;
-  padding-right: 25px;
+  background-color: var(--white);
+  border: none;
+  border-radius: 5px;
+  color: var(--placeholderDark);
 }
 
-.time-picker select::-ms-expand {
-  display: none; 
-}
-
-
-.time-picker img{
+.clock-icon {
   width: 15px;
   height: 15px;
+  padding-left: 10px;
+}
+
+.period-select::-ms-expand {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+
+  .time-picker {
+    width: 100%;
+    gap: 5px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .time-picker {
+    width: 100%;
+    gap: 5px;
+  }
+
 }

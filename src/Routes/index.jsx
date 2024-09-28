@@ -7,6 +7,7 @@ import Signup from '../Pages/Sign up/Signup';
 import Otp from '../Pages/otp/Otp';
 import Home from '../Pages/Home/Home';
 import Settings from '../Pages/Settings/Settings';
+import Event from '../Pages/Event/Event';
 
 export default function MainRoute() {
   return (
@@ -21,6 +22,7 @@ export default function MainRoute() {
           <Route path="/" element={<UserLayout />}>
             <Route path="Home" element={<Home />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="event" element={<Event />} />
 
             {/* Uncomment if needed
             <Route path="signup" element={<Signup />} />
